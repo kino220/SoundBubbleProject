@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../GitHub.iml" filepath="$PROJECT_DIR$/../GitHub.iml" />
       <module fileurl="file://$PROJECT_DIR$/SoundBubble/SoundBubble.iml" filepath="$PROJECT_DIR$/SoundBubble/SoundBubble.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../SoundBubble/SoundBubble.iml" filepath="$PROJECT_DIR$/../SoundBubble/SoundBubble.iml" />
       <module fileurl="file://$PROJECT_DIR$/SoundBubbleProject.iml" filepath="$PROJECT_DIR$/SoundBubbleProject.iml" />
     </modules>
   </component>
