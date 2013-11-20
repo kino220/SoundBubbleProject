@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="10"
         android:targetSdkVersion="17" />
 
     <application
@@ -13,6 +13,9 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+
+
         <activity
             android:name="com.example.soundbubble.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -26,4 +29,6 @@
         </activity>
     </application>
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
