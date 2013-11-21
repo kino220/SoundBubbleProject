@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -120,8 +121,9 @@ public class FullscreenActivity extends Activity implements RecognitionListener 
                     mSystemUiHider.show();
                 }
                 Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                        RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                //intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                //       RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.JAPAN.toString());
 
                 intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,
                         getPackageName());
@@ -138,6 +140,7 @@ public class FullscreenActivity extends Activity implements RecognitionListener 
 
         mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
         mSpeechRecognizer.setRecognitionListener(this);
+
 
 
         // Upon interacting with UI controls, delay any scheduled hide()
