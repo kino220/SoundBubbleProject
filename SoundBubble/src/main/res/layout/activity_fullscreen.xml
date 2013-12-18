@@ -16,5 +16,12 @@
         android:textSize="50sp"
         android:gravity="center"
         android:text="SOUND BUBBLE" />
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#33b5e5"
+        android:gravity="bottom"
+        android:textSize="16dp"/>
 
 </FrameLayout>
